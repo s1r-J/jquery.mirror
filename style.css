@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+body {
+    margin: 20px 40px;
+    background-image: linear-gradient(#4d4d4d, #7a7a7a);
+    color: gainsboro;
+    font-family: cursive, 'Meiryo';
+}
+
+div {
+    margin: 5px 10px;
+}
+
+h1 {
+    text-align: center;
+    color: whitesmoke;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: gainsboro;
+}
+
+a:visited {
+    color: whitesmoke;
+}
+
+.container {
+    display: flex;
+}
+
+.column {
+    flex: 1;
+    min-width: 300px;
+}
+
+.item {
+    border: 1px solid gainsboro;
+}
+
+.top {
+    position: relative;
+    margin: 0 0 20px 0;
+}
+
+.top h1 {
+    color: white;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+    font-size: 7rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.top img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 600px;
+}
+
+.gist-data {
+    margin: 5px 10px 0 10px;
+}
+
+.gist-meta {
+    margin: 0 10px 5px 10px;
+}
+
+.item div.gist-file {
+    border: 0px;
+    border-bottom: 0px;
+}
+
+#overview {
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+#link {
+    text-align: center;
+    font-size: 1.2rem
+}
+
+#link img {
+    max-height: 18px;
+    margin: 0px 2px;
+}
+
+#wanted {
+    text-align: center;
+}
+
+#wanted img {
+    max-width: 200px;
+}

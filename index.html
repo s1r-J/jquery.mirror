@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>mirror</title>
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link rel="shortcut icon" href="favicon.ico">
+</head>
+
+<body>
+
+    <main>
+
+        <div class="top">
+            <img src="https://docs.google.com/uc?export=view&id=1FQChOSOPlsudCOgn52fTMsUCyQDySmrj" alt="GitHub">
+            <h1><span class="whole">Mirror</span><span>Mirror</span></h1>
+        </div>
+
+        <div id="link">
+            <a href=""><img src="https://docs.google.com/uc?export=view&id=1gGAcdvEILsxvcjuYL3hbon-2v_VU3nli">GitHub</a>
+            <p id="overview">
+                jQuery plugin which provides text and images in the mirror writing.
+            </p>
+        </div>
+
+        <h1>Samples</h1>
+
+        <div class="container">
+            <div class="column">
+                <div class="item">
+                    <h2>Whole in the mirror</h2>
+                    <p class="whole">
+                        <span>Left-aligned text becomes right-aligned.</span>
+                    </p>
+                </div>
+                <div class="item">
+                    <h2>Each character in the mirror</h2>
+                    <div class="char">
+                        This widget can alter text and images in the mirror writing for each 1 character.
+                    </div>
+                </div>
+            </div>
+            <div class="column">
+                <div class="item">
+                    <h2>Nesting in the mirror</h2>
+                    <div class="char">
+                        <span>Mirror, mirror on the wall…</span>
+                        <ul>
+                            <li>Ōkagami</li>
+                            <li>Through the Looking-Glass, and What Alice Found There</li>
+                            <li>Venus at her Mirror</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="item">
+                    <h2>Image in the mirror</h2>
+                    <div class="whole" id="wanted">
+                        <img src="https://docs.google.com/uc?export=view&id=1gh-ubAnqhcdc9aXyzwPeRhE31vgMbv56" alt="sample">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h1>Usage</h1>
+        <div class="container">
+            <div class="column">
+                <div class="item">
+                    <h2>Whole</h2>
+                    <script src="https://gist.github.com/s1r-J/a854bfbb64155f11c305e07ca8704a66.js"></script>
+                </div>
+            </div>
+            <div class="column">
+                <div class="item">
+                    <h2>Each character</h2>
+                    <script src="https://gist.github.com/s1r-J/0b98205ea3ed0efd9f062d8b3b2913da.js"></script>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="mirror.js"></script>
+    <script>
+        $('.whole').mirror();
+        $('.char').mirror({
+            char: true,
+        });
+    </script>
+</body>
+
+</html>
