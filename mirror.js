@@ -4,6 +4,7 @@
  * MIT License
  *
  * @author s1r-J
+ * @see https://github.com/s1r-J/jquery.mirror
  */
 $.widget('ui.mirror', {
     options: {
