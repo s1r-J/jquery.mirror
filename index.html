@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>mirror</title>
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Mali" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
     <link rel="shortcut icon" href="favicon.ico">
@@ -32,12 +32,18 @@
             <div class="column">
                 <div class="item">
                     <h2>Whole in the mirror</h2>
+                    <p>
+                        <span>Left-aligned text becomes right-aligned.</span>
+                    </p>
                     <p class="whole">
                         <span>Left-aligned text becomes right-aligned.</span>
                     </p>
                 </div>
                 <div class="item">
                     <h2>Each character in the mirror</h2>
+                    <div>
+                        This widget can alter text and images in the mirror writing for each 1 character.
+                    </div>
                     <div class="char">
                         This widget can alter text and images in the mirror writing for each 1 character.
                     </div>
@@ -91,6 +97,7 @@
         $('.char').mirror({
             char: true,
         });
+
     </script>
 </body>
 
